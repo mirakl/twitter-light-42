@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/tmp/twitter
+  thymeleaf:
+    cache: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+management:
+  context-path: /management
+  security:
+    enabled: false
